@@ -109,4 +109,10 @@ describe('API endpoints', () => {
     expect(res.status).toBe(200);
     expect(res.text).toContain('<!DOCTYPE html>');
   });
+
+  test('GET /docs serves swagger ui', async () => {
+    const res = await request(app).get('/docs/');
+    expect(res.status).toBe(200);
+    expect(res.text).toContain('Swagger UI');
+  });
 });
