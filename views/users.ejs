@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>User List</title>
+  </head>
+  <body>
+    <h1>Users</h1>
+    <ul>
+      <% users.forEach(function(user){ %>
+        <li><%= user.username %> (ID: <%= user.id %>)</li>
+      <% }) %>
+    </ul>
+  </body>
+</html>
