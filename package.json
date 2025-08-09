@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"No tests specified\"",
+    "test": "jest --coverage",
     "start": "node server.js"
   },
   "keywords": [],
@@ -13,5 +13,8 @@
   "dependencies": {
     "ejs": "^3.1.9",
     "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }
