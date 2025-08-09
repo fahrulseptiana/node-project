@@ -1,6 +1,10 @@
 const users = [];
 let nextUserId = 1;
 
+function reset() {
+  users.length = 0;
+  nextUserId = 1;
+}
 function createUser(username, password) {
   const user = { id: nextUserId++, username, password };
   users.push(user);
@@ -41,4 +45,5 @@ module.exports = {
   getAllUsers,
   updateUser,
   deleteUser,
+  reset,
 };
